@@ -16,6 +16,16 @@
 			<img src="public/images/em-icon.png" />
 			<h1>EasyMarket</h1>
 		</div>
+		<div class="right">
+			<a href="#" class="notify">
+				<i class="fa fa-bell"></i>
+				<span>2</span>
+			</a>
+			<a href="#" class="user">
+				<img src="public/images/profile.jpg" />
+				<i class="fa fa-angle-down"></i>
+			</a>
+		</div>
 	</header>
 
 	<script type="text/javascript" src="public/js/jquery-latest.min.js"></script>
