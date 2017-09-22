@@ -1,6 +1,13 @@
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
 body {
 	background: #fafafa;
+	height: 100%;
 }
+
 header {
 	position: fixed;
 	left: 0;
@@ -95,15 +102,41 @@ header .user i {
 	margin-right: 15px;
 }
 
+nav {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 250px;
+	height: calc(100% - 60px);
+	background: #465365;
+	line-height: 55px;
+}
 
+nav ul {
+	float: left;
+	margin: 0;
+	width: 100%;
+}
 
+nav ul li {
+	width: 100%;
+}
 
+nav ul li a {
+	font-size: 18px;
+}
 
+nav ul a:hover {
+	background: #5a98d4;
+}
 
+nav ul li a i {
+	height: auto;
+}
 
-
-
-
+nav ul li a span {
+	margin-left: 10px;
+}
 
 
 

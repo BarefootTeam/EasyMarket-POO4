@@ -27,6 +27,53 @@
 			</a>
 		</div>
 	</header>
+	
+	<nav>
+		<ul>
+			<li>
+				<a href="#">
+					<i class="fa fa-bar-chart"></i>
+					<span>Estatísticas</span>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-list"></i>
+					<span>Produtos</span>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-money"></i>
+					<span>Valores</span>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-th"></i>
+					<span>Estoque</span>				
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-shopping-cart"></i>
+					<span>Vendas</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-file-text"></i>
+					<span>Notas Fiscais</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-users"></i>
+					<span>Usuários</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
 	<script type="text/javascript" src="public/js/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="public/js/materialize.min.js"></script>
