@@ -138,7 +138,13 @@ nav ul li a span {
 	margin-left: 10px;
 }
 
-
-
-
-
+.wrapper {
+	float: left;
+	width: calc(100% - 250px);
+	height: calc(100% - 60px);
+	margin-top: 60px;
+	margin-left: 250px;
+	-webkit-box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
+	   -moz-box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
+			box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
+}

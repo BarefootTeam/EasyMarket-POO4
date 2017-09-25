@@ -27,7 +27,6 @@
 			</a>
 		</div>
 	</header>
-	
 	<nav>
 		<ul>
 			<li>
@@ -74,7 +73,7 @@
 			</li>
 		</ul>
 	</nav>
-
+	<div class="wrapper"></div>
 	<script type="text/javascript" src="public/js/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="public/js/materialize.min.js"></script>
 </body>
