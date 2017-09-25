@@ -73,8 +73,22 @@
 			</li>
 		</ul>
 	</nav>
-	<div class="wrapper"></div>
+	<div class="wrapper">
+		<div class="content">
+			<div class="header">
+				<i class="fa fa-bar-chart"></i>
+				<span class="title">Título</span>
+				<span class="subtitle">Subtítulo</span>				
+				<a href="#" class="waves-effect waves-light btn">BOTAO HEADER</a>
+			</div>
+			
+			<div class="box">
+			
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="public/js/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="public/js/materialize.min.js"></script>
+	<script type="text/javascript" src="public/js/app.js"></script>
 </body>
 </html>

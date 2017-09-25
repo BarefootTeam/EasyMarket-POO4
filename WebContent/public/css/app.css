@@ -8,6 +8,14 @@ body {
 	height: 100%;
 }
 
+.btn, .btn-large, .btn:focus, .btn-large:focus, .btn-floating:focus {
+	background-color: #465365;
+}
+
+.btn:hover, .btn-large:hover {
+	background-color: #5a98d4;
+}
+
 header {
 	position: fixed;
 	left: 0;
@@ -147,4 +155,54 @@ nav ul li a span {
 	-webkit-box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
 	   -moz-box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
 			box-shadow: inset 0px 2px 25px -10px rgba(0,0,0,0.75);
+}
+
+.wrapper .content {
+	margin: 50px;
+	width: calc(100% - 100px);
+}
+
+.wrapper .content .header {
+	float: left;
+	width: 100%;
+	color: #2c3e50;
+	position: relative;
+}
+
+.wrapper .content .header i {
+	float: left;
+	font-size: 30px;
+	height: 55px;
+}
+
+.wrapper .content .header span.title {
+	float: left;
+	width: 90%;
+	font-size: 25px;
+	margin-left: 15px;
+	line-height: 1;
+}
+
+.wrapper .content .header span.subtitle {
+	color: #9fa1a2;
+	float: left;
+	width: 90%;
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+.wrapper .content .header a {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	font-size: 12px;
+}
+
+.wrapper .content .box {
+	float: left;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	margin-top: 20px;
+	min-height: 100px;
 }
