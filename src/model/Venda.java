@@ -1,6 +1,6 @@
 package model;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -51,7 +51,7 @@ public class Venda extends BasicModel {
 		this.cliente = cliente;
 	}
 
-	@OneToMany(mappedBy = "venda_id")
+	@OneToMany(mappedBy = "venda")
 	public List<ItemVenda> getItens() {
 		return itens;
 	}

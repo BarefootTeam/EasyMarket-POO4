@@ -1,6 +1,6 @@
 package model;
 
-import java.sql.Date;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -40,7 +40,7 @@ public class Compra extends BasicModel {
 		this.usuario = usuario;
 	}
 
-	@OneToMany(mappedBy = "compra_id")
+	@OneToMany(mappedBy = "compra")
 	public List<ItemCompra> getItens() {
 		return itens;
 	}
