@@ -47,7 +47,6 @@ public class UsuarioDAO {
 			em.getTransaction().begin();
 			usuario = em.merge(usuario);
 			em.getTransaction().commit();
-			System.out.println("Registro gravado com sucesso!");
 		} catch(Exception e) {
 			em.getTransaction().rollback();
 			e.printStackTrace();
@@ -64,6 +63,7 @@ public class UsuarioDAO {
 			return true;
 		} catch(Exception e) {
 			em.getTransaction().rollback();
+			e.printStackTrace();
 			return false;
 		}
 	}
