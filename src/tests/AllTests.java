@@ -8,7 +8,8 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({ 
 	ClienteDAOTest.class, 
 	ProdutoDAOTest.class, 
-	UsuarioDAOTest.class 
+	UsuarioDAOTest.class,
+	PrecoDAOTest.class
 })
 
 public class AllTests {

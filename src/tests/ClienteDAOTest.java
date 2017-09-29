@@ -3,6 +3,7 @@ package tests;
 import static org.junit.Assert.*;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -14,7 +15,8 @@ public class ClienteDAOTest {
 
 	@Test
 	public void buscarTodosTest() {
-		assertNotNull(ClienteDAO.getInstance().buscarTodos());
+		List<Cliente> clientes = ClienteDAO.getInstance().buscarTodos();
+		assertTrue(clientes.size() > 0);
 	}
 	
 	@Test
