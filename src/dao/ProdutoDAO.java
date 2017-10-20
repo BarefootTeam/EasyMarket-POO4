@@ -10,13 +10,8 @@ import utils.PersistenceUtil;
 
 public class ProdutoDAO {
 
-	private static ProdutoDAO produtoDAO;
-	
 	public static ProdutoDAO getInstance() {
-		if(produtoDAO == null) {
-			produtoDAO = new ProdutoDAO();
-		}
-		return produtoDAO;
+			return new ProdutoDAO();
 	}
 	
 	@SuppressWarnings("unchecked")
