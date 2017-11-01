@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Easy Market</title>
-	<link rel="stylesheet" href="public/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="public/css/materialize.min.css" />
-	<link rel="stylesheet" href="public/css/app.css" />
+	<link rel="stylesheet" href="/EasyMarket/public/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/EasyMarket/public/css/materialize.min.css" />
+	<link rel="stylesheet" href="/EasyMarket/public/css/app.css" />
 </head>
 <body>
 
@@ -30,13 +30,13 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="index.jsp">
+				<a href="/EasyMarket/">
 					<i class="fa fa-bar-chart"></i>
 					<span>Estatísticas</span>				
 				</a>
 			</li>
 			<li>
-				<a href="produtos.jsp">
+				<a href="/EasyMarket/produto">
 					<i class="fa fa-list"></i>
 					<span>Produtos</span>				
 				</a>

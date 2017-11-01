@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@page import="model.Produto"%>
-<%@ include file="includes/header.jsp" %>
+<%@ include file="../includes/header.jsp" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <jsp:useBean id="controlProduto" class="control.ProdutoController" />
@@ -42,4 +42,4 @@
 		}
 	%>
 </div>
-<%@ include file="includes/footer.jsp" %>
+<%@ include file="../includes/footer.jsp" %>

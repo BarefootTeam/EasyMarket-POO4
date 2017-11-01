@@ -16,7 +16,7 @@
 <jsp:useBean id="controlProduto" class="control.ProdutoController" />
 <jsp:useBean id="controlUsuario" class="control.UsuarioController" />
 
-<%@ include file="includes/header.jsp" %>
+<%@ include file="../includes/header.jsp" %>
 
 <div class="content">
 	<%
@@ -83,4 +83,4 @@
 	%>
 </div>
 
-<%@ include file="includes/footer.jsp" %>
+<%@ include file="../includes/footer.jsp" %>

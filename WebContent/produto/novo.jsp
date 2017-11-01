@@ -1,4 +1,4 @@
-<%@ include file="includes/header.jsp" %>
+<%@ include file="../includes/header.jsp" %>
 <div class="content">
 	<div class="header">
 		<i class="fa fa-bar-chart"></i>
@@ -7,7 +7,7 @@
 	<div class="box">
 		<div class="row">
 			<div class="col s12">
-				<form method="POST" action="submitproduto.jsp" enctype="multipart/form-data">
+				<form method="POST" action="submit.jsp" enctype="multipart/form-data">
 					<div class="input-field col s12">
 						<input type="text" id="nome" name="nome" />
 						<label for="nome">Nome</label>
@@ -37,4 +37,4 @@
 		</div>
 	</div>
 </div>
-<%@ include file="includes/footer.jsp" %>
+<%@ include file="../includes/footer.jsp" %>
