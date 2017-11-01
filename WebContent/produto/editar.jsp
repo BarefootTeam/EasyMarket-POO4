@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@page import="model.Produto"%>
-<%@ include file="includes/header.jsp" %>
+<%@ include file="../includes/header.jsp" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <jsp:useBean id="controlProduto" class="control.ProdutoController" />
@@ -18,7 +18,7 @@
 	<div class="box">
 		<div class="row">
 			<div class="col s12">
-				<form method="POST" action="updateproduto.jsp" enctype="multipart/form-data">
+				<form method="POST" action="update.jsp" enctype="multipart/form-data">
 					
 					<input type="hidden" name="id" value="<%=produto.getId()%>" />
 				
@@ -51,4 +51,4 @@
 		</div>
 	</div>
 </div>
-<%@ include file="includes/footer.jsp" %>
+<%@ include file="../includes/footer.jsp" %>

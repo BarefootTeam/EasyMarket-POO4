@@ -4,14 +4,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="controlProduto" class="control.ProdutoController" />
 
-<%@ include file="includes/header.jsp" %>
+<%@ include file="../includes/header.jsp" %>
 
 <div class="content">
 	<div class="header">
 		<i class="fa fa-bar-chart"></i>
 		<span class="title">Produtos</span>
 		<span class="subtitle">Listagem de produtos cadastrados no sistema</span>				
-		<a href="novoproduto.jsp" class="waves-effect waves-light btn">NOVO PRODUTO</a>
+		<a href="novo.jsp" class="waves-effect waves-light btn">NOVO PRODUTO</a>
 	</div>
 	<div class="box">
 		<div class="row">
@@ -30,8 +30,8 @@
 								<td>${i.codigo}</td>
 								<td>${i.nome}</td>
 								<td>
-									<a href="editarproduto.jsp?id=${i.id}" class="waves-effect waves-light btn"><i class="fa fa-pencil"></i></a>
-									<a href="excluirproduto.jsp?id=${i.id}" class="waves-effect waves-light btn"><i class="fa fa-times"></i></a>
+									<a href="editar.jsp?id=${i.id}" class="waves-effect waves-light btn"><i class="fa fa-pencil"></i></a>
+									<a href="excluir.jsp?id=${i.id}" class="waves-effect waves-light btn"><i class="fa fa-times"></i></a>
 								</td>
 							</tr>
 						</c:forEach>
@@ -41,4 +41,4 @@
 		</div>
 	</div>
 </div>
-<%@ include file="includes/footer.jsp" %>
+<%@ include file="../includes/footer.jsp" %>
