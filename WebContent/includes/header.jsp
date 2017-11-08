@@ -30,12 +30,6 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/EasyMarket/">
-					<i class="fa fa-bar-chart"></i>
-					<span>Estatísticas</span>				
-				</a>
-			</li>
-			<li>
 				<a href="/EasyMarket/produto">
 					<i class="fa fa-list"></i>
 					<span>Produtos</span>				
@@ -49,20 +43,14 @@
 			</li>
 			<li>
 				<a href="#">
-					<i class="fa fa-th"></i>
-					<span>Estoque</span>				
-				</a>
-			</li>
-			<li>
-				<a href="#">
 					<i class="fa fa-shopping-cart"></i>
-					<span>Vendas</span>
+					<span>Compras</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-file-text"></i>
-					<span>Notas Fiscais</span>
+					<span>Vendas</span>
 				</a>
 			</li>
 			<li>
