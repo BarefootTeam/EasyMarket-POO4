@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-
 <%@page import="model.Produto"%>
 <%@ include file="../includes/header.jsp" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -37,11 +35,11 @@
 					</div>
 					<div class="input-field col s4">
 						<input type="text" id="codigo" name="codigo" value="<%=produto.getCodigo()%>" />
-						<label for="codigo">CÃ³digo</label>
+						<label for="codigo">Código</label>
 					</div>
 					<div class="input-field col s12">
 						<textarea id="descricao" name="descricao" class="materialize-textarea"><%=produto.getDescricao()%></textarea>
-						<label for="descricao">DescriÃ§Ã£o</label>
+						<label for="descricao">Descrição</label>
 					</div>
 					<div class="col s12">
 						<input type="submit" class="waves-effect waves-light btn right" value="Salvar" />

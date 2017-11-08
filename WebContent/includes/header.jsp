@@ -13,7 +13,7 @@
 	<header>
 		<a href="#" class="toggle-menu"><i class="fa fa-ellipsis-h"></i></a>	
 		<div class="logo">
-			<img src="public/images/em-icon.png" />
+			<img src="/EasyMarket/public/images/em-icon.png" />
 			<h1>EasyMarket</h1>
 		</div>
 		<div class="right">
@@ -22,19 +22,13 @@
 				<span>2</span>
 			</a>
 			<a href="#" class="user">
-				<img src="public/images/profile.jpg" />
+				<img src="/EasyMarket/public/images/profile.jpg" />
 				<i class="fa fa-angle-down"></i>
 			</a>
 		</div>
 	</header>
 	<nav>
 		<ul>
-			<li>
-				<a href="/EasyMarket/">
-					<i class="fa fa-bar-chart"></i>
-					<span>Estatísticas</span>				
-				</a>
-			</li>
 			<li>
 				<a href="/EasyMarket/produto">
 					<i class="fa fa-list"></i>
@@ -49,24 +43,18 @@
 			</li>
 			<li>
 				<a href="#">
-					<i class="fa fa-th"></i>
-					<span>Estoque</span>				
-				</a>
-			</li>
-			<li>
-				<a href="#">
 					<i class="fa fa-shopping-cart"></i>
-					<span>Vendas</span>
+					<span>Compras</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-file-text"></i>
-					<span>Notas Fiscais</span>
+					<span>Vendas</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/usuarios">
 					<i class="fa fa-users"></i>
 					<span>Usuários</span>
 				</a>

@@ -38,5 +38,8 @@
 			
 		});
 		
+		$('.cpf').mask('999.999.999-99');
+		$('select').material_select();
+		
 	});	
 })(jQuery);
