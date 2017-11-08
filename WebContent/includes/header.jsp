@@ -13,7 +13,7 @@
 	<header>
 		<a href="#" class="toggle-menu"><i class="fa fa-ellipsis-h"></i></a>	
 		<div class="logo">
-			<img src="public/images/em-icon.png" />
+			<img src="/EasyMarket/public/images/em-icon.png" />
 			<h1>EasyMarket</h1>
 		</div>
 		<div class="right">
@@ -22,7 +22,7 @@
 				<span>2</span>
 			</a>
 			<a href="#" class="user">
-				<img src="public/images/profile.jpg" />
+				<img src="/EasyMarket/public/images/profile.jpg" />
 				<i class="fa fa-angle-down"></i>
 			</a>
 		</div>
@@ -54,7 +54,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/usuarios">
 					<i class="fa fa-users"></i>
 					<span>Usuários</span>
 				</a>
