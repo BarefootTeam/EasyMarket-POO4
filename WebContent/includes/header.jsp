@@ -36,7 +36,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/preco">
 					<i class="fa fa-money"></i>
 					<span>Valores</span>				
 				</a>
