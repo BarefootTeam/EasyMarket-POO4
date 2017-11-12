@@ -5,7 +5,7 @@
 <jsp:useBean id="controlPreco" class="control.PrecoController" />
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
-<fmt:setLocale value="pt_BR" />
+<fmt:setLocale value="pt_BR" /> 
 
 <%@ include file="../includes/header.jsp" %>
 

@@ -6,7 +6,8 @@
 	<title>Easy Market</title>
 	<link rel="stylesheet" href="/EasyMarket/public/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="/EasyMarket/public/css/materialize.min.css" />
-	<link rel="stylesheet" href="/EasyMarket/public/css/app.css" />
+	<link rel="stylesheet" href="/EasyMarket/public/css/app.css" />	
+	<link rel="stylesheet" href="/EasyMarket/public/css/custom-pages.css" />
 </head>
 <body>
 
@@ -42,7 +43,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/compra">
 					<i class="fa fa-shopping-cart"></i>
 					<span>Compras</span>
 				</a>
@@ -59,6 +60,18 @@
 					<span>Usuários</span>
 				</a>
 			</li>
+			<li>
+				<a href="/EasyMarket/relatorio">
+					<i class="fa fa-bar-chart"></i>
+					<span>Relatórios</span>
+				</a>
+			</li>
+			<li>
+				<a href="/EasyMarket/estoque">
+					<i class="fa fa-archive"></i>
+					<span>Estoque</span>
+				</a>
+			</li>		
 		</ul>
 	</nav>
 	<div class="wrapper">
