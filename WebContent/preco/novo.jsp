@@ -4,21 +4,22 @@
 <%@page import="java.util.ArrayList"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="controlPreco" class="control.PrecoController" />
+<jsp:useBean id="controlProduto" class="control.ProdutoController" />
 
 <div class="content">
 	<div class="header">
 		<i class="fa fa-bar-chart"></i>
-		<span class="title">Cadastro de Valores</span>
+		<span class="title">Cadastro Valor</span>
 	</div>
 	<div class="box">
 		<div class="row">
 			<div class="col s12">
-				<form method="POST" action="submit.jsp" enctype="multipart/form-data">
+				<form method="POST" action="submit.jsp">
 					<div class="input-field col s6">
 						<select id="produto" name="produto" required>
 						<option value="">Selecione o Produto</option>
-							<c:forEach var="i" items="${controlPreco.buscarTodos()}">							
-								<option value="${i.produto.id}">${i.produto.nome}</option>							
+							<c:forEach var="i" items="${controlProduto.buscarTodos()}">							
+								<option value="${i.id}">${i.nome}</option>							
 							</c:forEach>	
 						</select>											
 						<label for="produto">Produto</label>
