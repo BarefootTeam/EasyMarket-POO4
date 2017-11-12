@@ -29,13 +29,11 @@
 					<div class="input-field col s6">
 					<input type="text" name="produto-nome" id="produto-nome" value="<%=preco.getProduto().getNome()%>" readonly="readonly"/>										
 						<label for="produto">Produto</label>
-					</div>
-					
+					</div>					
 					<div class="input-field col s6">
 						<input type="text" id="valor" name="valor" value="<%=preco.getValor()%>"/>
 						<label for="valor">Valor</label>						
-					</div>
-					
+					</div>					
 					<div class="input-field col s6">
 						<input type="text" id="data-inicio" name="data-inicio" class="datepicker" value='<fmt:formatDate value="<%=preco.getDataInicio()%>"/>'/>
 						<label for="data-inicio">Data Inicial</label>
@@ -53,6 +51,4 @@
 	</div>
 </div>
 <%@ include file="../includes/footer.jsp" %>
-
-<script src="../includes/scripts/datepicker.config.js"></script>
 

@@ -10,8 +10,7 @@
 <%@ include file="../includes/header.jsp"%>
 
 <div class="content">
-	<%	
-	
+	<%		
 		DateFormat fmtData = new SimpleDateFormat("dd/MM/yyyy");
 		String dataInicio = request.getParameter("data-inicio");
 		String dataFinal = request.getParameter("data-final");
@@ -30,8 +29,7 @@
 		preco.setDataCadastro(new Date());
 		preco.setUsuario(controlUsuario.buscarPorId(3L));	
 		
-		if (controlPreco.persistir(preco)) {		
-			
+		if (controlPreco.persistir(preco)) {				
 	%>
 	
 	<div class="header">

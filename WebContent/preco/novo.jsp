@@ -45,6 +45,3 @@
 	</div>
 </div>
 <%@ include file="../includes/footer.jsp" %>
-
-<script src="../includes/scripts/datepicker.config.js"></script>
-
