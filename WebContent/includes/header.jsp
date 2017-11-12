@@ -43,7 +43,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/compra">
 					<i class="fa fa-shopping-cart"></i>
 					<span>Compras</span>
 				</a>
@@ -67,7 +67,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="/EasyMarket/relatorio">
+				<a href="/EasyMarket/estoque">
 					<i class="fa fa-archive"></i>
 					<span>Estoque</span>
 				</a>
