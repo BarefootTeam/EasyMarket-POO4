@@ -1,10 +1,5 @@
-<%@page import="model.Produto"%>
-<%@page import="model.ItemVenda"%>
-<%@page import="model.Compra"%>
-<%@page import="model.Venda"%>
 <%@page import="java.util.List"%>
 <%@page import="model.Estoque"%>
-<%@page import="java.util.ArrayList"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <jsp:useBean id="controlEstoque" class="control.EstoqueController" />
 <jsp:useBean id="controlProduto" class="control.ProdutoController" />
@@ -23,7 +18,6 @@
 		<i class="fa fa-bar-chart"></i>
 		<span class="title">Estoque de Produtos</span>
 		<span class="subtitle">Listagem de quantidade de produtos no estoque do sistema</span>				
-		<a href="novo.jsp" class="waves-effect waves-light btn">NOVO COMPRA</a>
 	</div>
 	<div class="box">
 		<div class="row">
@@ -31,15 +25,15 @@
 				<table class="striped bordered">
 					<thead>
 						<tr>
-							<td width="250">Produto</td>
-							<td>Quantidade Disponivel</td>
+							<td>Produto</td>
+							<td width="450" style="text-align: center">Quantidade Disponivel</td>
 						</tr>
 					</thead>
 					<tbody>
 						<c:forEach var="i" items="<%=estoqueGeral%>">
 							<tr>
 								<td>${i.produto.nome}</td>
-								<td>${i.quantidadeComprada - i.quantidadeVendida}</td>
+								<td style="text-align: center">${i.quantidadeComprada - i.quantidadeVendida > 0 ? i.quantidadeComprada - i.quantidadeVendida : 0}</td>
 							</tr>
 						</c:forEach>
 					</tbody>

@@ -14,8 +14,8 @@
 	<header>
 		<a href="#" class="toggle-menu"><i class="fa fa-ellipsis-h"></i></a>	
 		<div class="logo">
-			<img src="/EasyMarket/public/images/em-icon.png" />
-			<h1>EasyMarket</h1>
+			<a href="/EasyMarket/index.jsp"><img src="/EasyMarket/public/images/em-icon.png" />
+			<h1>EasyMarket</h1></a>
 		</div>
 		<div class="right">
 			<a href="#" class="notify">
@@ -49,7 +49,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/venda">
 					<i class="fa fa-file-text"></i>
 					<span>Vendas</span>
 				</a>
@@ -61,9 +61,10 @@
 				</a>
 			</li>
 			<li>
-				<a href="/EasyMarket/relatorio">
-					<i class="fa fa-bar-chart"></i>
-					<span>Relatórios</span>
+				<a href="#">
+<!-- 			<a href="/EasyMarket/relatorio"> -->
+				<i class="fa fa-bar-chart"></i>
+				<span>Relatórios</span>
 				</a>
 			</li>
 			<li>
