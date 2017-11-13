@@ -6,15 +6,16 @@
 	<title>Easy Market</title>
 	<link rel="stylesheet" href="/EasyMarket/public/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="/EasyMarket/public/css/materialize.min.css" />
-	<link rel="stylesheet" href="/EasyMarket/public/css/app.css" />
+	<link rel="stylesheet" href="/EasyMarket/public/css/app.css" />	
+	<link rel="stylesheet" href="/EasyMarket/public/css/custom-pages.css" />
 </head>
 <body>
 
 	<header>
 		<a href="#" class="toggle-menu"><i class="fa fa-ellipsis-h"></i></a>	
 		<div class="logo">
-			<img src="/EasyMarket/public/images/em-icon.png" />
-			<h1>EasyMarket</h1>
+			<a href="/EasyMarket/index.jsp"><img src="/EasyMarket/public/images/em-icon.png" />
+			<h1>EasyMarket</h1></a>
 		</div>
 		<div class="right">
 			<a href="#" class="notify">
@@ -36,19 +37,19 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/preco">
 					<i class="fa fa-money"></i>
 					<span>Valores</span>				
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/compra">
 					<i class="fa fa-shopping-cart"></i>
 					<span>Compras</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="/EasyMarket/venda">
 					<i class="fa fa-file-text"></i>
 					<span>Vendas</span>
 				</a>
@@ -59,6 +60,19 @@
 					<span>Usuários</span>
 				</a>
 			</li>
+			<li>
+				<a href="#">
+<!-- 			<a href="/EasyMarket/relatorio"> -->
+				<i class="fa fa-bar-chart"></i>
+				<span>Relatórios</span>
+				</a>
+			</li>
+			<li>
+				<a href="/EasyMarket/estoque">
+					<i class="fa fa-archive"></i>
+					<span>Estoque</span>
+				</a>
+			</li>		
 		</ul>
 	</nav>
 	<div class="wrapper">
