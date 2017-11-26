@@ -6,10 +6,14 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({ 
-	ClienteDAOTest.class, 
-	ProdutoDAOTest.class, 
-	UsuarioDAOTest.class,
-	PrecoDAOTest.class
+	ClienteDAOTest.class,
+	ProdutoDAOTest.class, 	
+	CompraDAOTest.class,
+	ItemCompraDAOTest.class,
+	VendaDAOTest.class,	
+	ItemVendaDAOTest.class,
+	PrecoDAOTest.class,	
+	UsuarioDAOTest.class	
 })
 
 public class AllTests {

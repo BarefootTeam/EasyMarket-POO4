@@ -9,6 +9,12 @@
 
 <%@ include file="../includes/header.jsp" %>
 
+<%
+	session = request.getSession();
+	session.invalidate();
+%>
+
+
 <div class="content">
 	<div class="header">
 		<i class="fa fa-bar-chart"></i>

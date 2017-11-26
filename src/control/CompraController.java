@@ -3,7 +3,9 @@ package control;
 import java.util.List;
 
 import dao.CompraDAO;
+import dao.ItemCompraDAO;
 import model.Compra;
+import model.ItemCompra;
 
 public class CompraController {
 	
@@ -20,6 +22,11 @@ public class CompraController {
 	}
 	
 	public boolean deletar(Compra compra){
+		 List<ItemCompra> itens = compra.getItens();
+		 
+		 for (ItemCompra itemCompra : itens) {		   
+			 ItemCompraDAO.getInstance().deletar(itemCompra);
+		}		
 		return CompraDAO.getInstance().deletar(compra);
 	}
 

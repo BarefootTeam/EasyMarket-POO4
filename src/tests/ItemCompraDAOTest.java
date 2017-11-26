@@ -9,9 +9,22 @@ import org.junit.Test;
 import dao.CompraDAO;
 import dao.ItemCompraDAO;
 import dao.ProdutoDAO;
+import dao.UsuarioDAO;
 import model.ItemCompra;
 
 public class ItemCompraDAOTest {
+	
+	@Test
+	public void persistirTest() {
+		for (int i = 0; i < 3; i++) {
+		ItemCompra item = new ItemCompra();
+		item.setQuantidade(10);
+		item.setValorUnitario(100f);	
+		item.setProduto(ProdutoDAO.getInstance().buscarPorId(106L));
+		item.setCompra(CompraDAO.getInstance().buscarPorId(110L));
+		assertNotNull(ItemCompraDAO.getInstance().persistir(item));
+		}
+	}
 
 	@Test
 	public void buscarTodosTest() {
@@ -26,18 +39,9 @@ public class ItemCompraDAOTest {
 	}
 	
 	@Test
-	public void persistirTest() {
-		ItemCompra item = new ItemCompra();
-		item.setQuantidade(10);
-		item.setValorUnitario(100f);
-		item.setProduto(ProdutoDAO.getInstance().buscarTodos().get(0));
-		item.setCompra(CompraDAO.getInstance().buscarTodos().get(0));
-		assertNotNull(ItemCompraDAO.getInstance().persistir(item));
-	}
-	
-	@Test
 	public void deletarTest() {
-		ItemCompra item = ItemCompraDAO.getInstance().buscarTodos().get(0);
+		int ultimo = ItemCompraDAO.getInstance().buscarTodos().size() - 1;
+		ItemCompra item = ItemCompraDAO.getInstance().buscarTodos().get(ultimo);
 		assertTrue(ItemCompraDAO.getInstance().deletar(item));
 	}
 
