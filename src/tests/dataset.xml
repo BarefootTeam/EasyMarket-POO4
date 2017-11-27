@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<usuario id="1001" nome="usarioDataSet"  cpf="09098790987" login="dataset" senha="set" tipo="1" data_inativo="2017-11-11" data_cadastro="2017-11-11"/>
+	
+	<cliente id="1001" nome="clienteDataSet" cpf="09878765478" email="datasetcliente@dataset.com" telefone="980887655" data_cadastro="2017-11-11" usuario_id="1001"/>
+	
+	<produto id="1001" nome="produtoDataSet" imagem="dataSet.png" codigo="NewProduct" descricao="Teste DataSet" data_cadastro="2017-11-11" usuario_id="1001"/>
+	<produto id="1002" nome="produtoDataSet2" imagem="dataSet2.png" codigo="NewProduct2" descricao="Teste DataSet 2" data_cadastro="2017-11-11" usuario_id="1001"/>
+	
+	<compra id="1001" data="2017-11-11" usuario_id="1001"/>	
+	
+	<preco id="1001" valor="787" data_inicio="2017-11-11" data_final="2017-12-12" data_cadastro="2017-11-11" usuario_id="1001" produto_id="1001" />
+	<preco id="1002" valor="232" data_inicio="2017-11-11" data_final="2017-12-12" data_cadastro="2017-11-11" usuario_id="1001" produto_id="1002" />
+	
+	<venda id="1001" data="2017-11-11" usuario_id="1001" cliente_id="1001" />
+	
+	<item_compra id="1001" quantidade="10" valor_unitario="13"  compra_id="1001" produto_id="1001"/>
+	<item_compra id="1002" quantidade="20" valor_unitario="15"  compra_id="1001" produto_id="1002"/>	
+	
+	<item_venda id="1001" quantidade="10" valor_unitario="13"  venda_id="1001" produto_id="1001"/>
+	<item_venda id="1002" quantidade="20" valor_unitario="15"  venda_id="1001" produto_id="1002"/>	
+	
+</dataset>

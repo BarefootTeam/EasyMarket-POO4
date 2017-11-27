@@ -2,7 +2,11 @@ package control;
 
 import java.util.List;
 
+import dao.ItemCompraDAO;
+import dao.ItemVendaDAO;
 import dao.VendaDAO;
+import model.ItemCompra;
+import model.ItemVenda;
 import model.Venda;
 
 public class VendaController {
@@ -19,7 +23,12 @@ public class VendaController {
 	   return VendaDAO.getInstance().persistir(venda) != null;
    }
    
-   public boolean deletar(Venda venda){
+   public boolean deletar(Venda venda){	   
+	   List<ItemVenda> itens = venda.getItens();
+		 
+		 for (ItemVenda itemVenda : itens) {		   
+			 ItemVendaDAO.getInstance().deletar(itemVenda);
+		}		
 	   return VendaDAO.getInstance().deletar(venda);
    }
 

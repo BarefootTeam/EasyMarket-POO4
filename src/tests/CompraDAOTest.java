@@ -9,6 +9,7 @@ import java.util.List;
 import org.junit.Test;
 
 import dao.CompraDAO;
+import dao.ItemCompraDAO;
 import dao.UsuarioDAO;
 import dao.VendaDAO;
 import model.Compra;
@@ -18,6 +19,18 @@ import model.Venda;
 
 public class CompraDAOTest {
 
+	
+	@Test
+	public void persistirTest() {
+		for (int i = 0; i < 3; i++) {
+			Compra compra = new Compra();
+			compra.setData(new Date());
+			compra.setUsuario(UsuarioDAO.getInstance().buscarTodos().get(0));
+			compra.setItens(new ArrayList<ItemCompra>());
+			assertNotNull(CompraDAO.getInstance().persistir(compra));
+		}		
+	}
+	
 	@Test
 	public void buscarTodosTest() {
 		List<Compra> compras = CompraDAO.getInstance().buscarTodos();
@@ -28,20 +41,12 @@ public class CompraDAOTest {
 	public void buscarPorId() {
 		Long id = CompraDAO.getInstance().buscarTodos().get(0).getId();
 		assertNotNull(CompraDAO.getInstance().buscarPorId(id));
-	}
-	
-	@Test
-	public void persistirTest() {
-		Compra compra = new Compra();
-		compra.setData(new Date());
-		compra.setUsuario(UsuarioDAO.getInstance().buscarTodos().get(0));
-		compra.setItens(new ArrayList<ItemCompra>());
-		assertNotNull(CompraDAO.getInstance().persistir(compra));
-	}
+	}	
 	
 	@Test
 	public void deletarTest() {
-		Compra compra = CompraDAO.getInstance().buscarTodos().get(0);
+		int ultimo = UsuarioDAO.getInstance().buscarTodos().size() - 1;
+		Compra compra = CompraDAO.getInstance().buscarTodos().get(ultimo);
 		assertTrue(CompraDAO.getInstance().deletar(compra));
 	}
 

@@ -16,6 +16,20 @@ import model.Produto;
 public class PrecoDAOTest {
 
 	@Test
+	public void persistirTest() {
+		for (int i = 0; i < 3; i++) {
+		Preco preco = new Preco();
+		preco.setProduto(ProdutoDAO.getInstance().buscarPorId(12L));
+		preco.setUsuario(UsuarioDAO.getInstance().buscarPorId(3L));
+		preco.setValor(145f);
+		preco.setDataCadastro(new Date());
+		preco.setDataInicio(new Date());
+		
+		assertNotNull(PrecoDAO.getInstance().persistir(preco));
+		}
+	}
+	
+	@Test
 	public void buscarTodosTest() {
 		List<Preco> precos = PrecoDAO.getInstance().buscarTodos();
 		assertTrue(precos.size() > 0);
@@ -41,20 +55,9 @@ public class PrecoDAOTest {
 	}
 	
 	@Test
-	public void persistirTest() {
-		Preco preco = new Preco();
-		preco.setProduto(ProdutoDAO.getInstance().buscarPorId(12L));
-		preco.setUsuario(UsuarioDAO.getInstance().buscarPorId(3L));
-		preco.setValor(145f);
-		preco.setDataCadastro(new Date());
-		preco.setDataInicio(new Date());
-		
-		assertNotNull(PrecoDAO.getInstance().persistir(preco));
-	}
-	
-	@Test
 	public void deletarTest() {
-		Preco preco = PrecoDAO.getInstance().buscarPorProduto(12L).get(0);
+		int ultimo = UsuarioDAO.getInstance().buscarTodos().size() - 1;
+		Preco preco = PrecoDAO.getInstance().buscarPorProduto(12L).get(ultimo);
 		assertTrue(PrecoDAO.getInstance().deletar(preco));
 	}
 
